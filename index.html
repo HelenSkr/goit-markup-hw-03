@@ -10,56 +10,60 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <div class="conteiner">
+      <div class="container header-nav">
         <a href="./index.html" class="link logo"> <span class="logo-part">Web</span>Studio</a>
         <nav>
           <ul class="ul navlist">
-            <li><a class="link current-link" href="./index.html">Студия</a></li>
-            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="">Контакты</a></li>
+            <li class="item"><a class="link current-link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="ul contacts">
-          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
     <main>
       <section class="hero">
+        <div class="container">
           <h1>эффективные решения<br>для вашего бизнеса</h1>
           <button type="button" class="button-main">Заказать услугу</button>
-      </section>
-        <section>
-          <div class="conteiner">
+        </div>  
+        </section>
+    </div>
+        <section class="section-advantages">
+          <div class="container">
             <!--<h2>Наши преимущества</h2>-->
-            <ul class="ul">
-              <li>
+            <ul class="ul advantages-list">
+              <li class="item">
                 <h3 class="advantages">Внимание к деталям</h3>
                 <p class="advantages-description">
                   Идейные соображения, а также начало повседневной работы по
                   формированию позиции.
                 </p>
               </li>
-              <li>
+              <li class="item">
                 <h3 class="advantages">Пунктуальность</h3>
                 <p class="advantages-description">
                   Задача организации, в особенности же рамки и место обучения
                   кадров влечет за собой.
                 </p>
               </li>
-              <li>
+              <li class="item">
                 <h3 class="advantages">Планирование</h3>
                 <p class="advantages-description">
                   Равным образом консультация с широким активом в значительной
                   степени обуславливает.
                 </p>
               </li>
-              <li>
+              <li class="item">
                 <h3 class="advantages">Современные технологии</h3>
                 <p class="advantages-description">
                   Значимость этих проблем настолько очевидна, что реализация
@@ -68,71 +72,78 @@
               </li>
             </ul>
         </section>
-        <section>
-          <div class="conteiner">
+        <section class="section-about-us">
+          <div class="container">
             <h2 class="title-about-us">Чем мы занимаемся</h2>
-            <ul class="ul">
-              <li>
+            <ul class="ul doing-list">
+              <li class="item">
                 <img
                   src="./imeges/squoosh_img1.jpg"
                   alt="img_laptop"
-                  width="300"
+                  width="370"
+                  height="294"
                 />
               </li>
-              <li>
+              <li class="item">
                 <img
                   src="./imeges/squoosh_img2.jpg"
                   alt="img_phone"
-                  width="300"
+                  width="370"
+                  height="294"
                 />
               </li>
-              <li>
+              <li class="item">
                 <img
                   src="./imeges/squoosh_img3.jpg"
                   alt="img_tabtel"
-                  width="300"
+                  width="370"
+                  height="294"
                 />
               </li>
             </ul>
           </div>
         </section>
       </div>
-      <section>
-        <div class="conteiner about-us">
+      <section class="section-our-teem">
+        <div class="container">
           <h2 class="title-about-us">Наша команда</h2>
-          <ul class="ul">
-            <li>
+          <ul class="ul our-teem-list">
+            <li class="item">
               <img
                 src="./imeges/squoosh_photo_designer1.jpg"
                 alt="photo designer"
-                width="300"
+                width="270"
+                height="260"
               />
               <h3 class="about-name">Игорь Демьяненко</h3>
               <p class="about-position">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./imeges/squoosh_photo_developer2.jpg"
                 alt="photo developer"
-                width="300"
+                width="270"
+                height="260"
               />
               <h3 class="about-name">Ольга Репина</h3>
               <p class="about-position">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./imeges/squoosh_photo_marketing3.jpg"
                 alt="photo marketing"
-                width="300"
+                width="270"
+                height="260"
               />
               <h3 class="about-name">Николай Тарасов</h3>
               <p class="about-position">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./imeges/squoosh_photo_ui_designer4.jpg"
                 alt="photo ui designer"
-                width="300"
+                width="270"
+                height="260"
               />
               <h3 class="about-name">Михаил Ермаков</h3>
               <p class="about-position">UI Designer</p>
@@ -141,8 +152,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="conteiner footer">
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="link logo"><span class="logo-part">Web</span>Studio</a>
         <address class="address">
             <ul class="ul contacts">
