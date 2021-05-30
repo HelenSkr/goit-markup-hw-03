@@ -16,8 +16,8 @@ body {
   margin: 0;
 }
 .container {
-  width: 1170px;
-  border: 3px solid rgb(29, 134, 3);
+  width: 1200px;
+  border: 1px solid rgb(29, 134, 3);
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
@@ -62,7 +62,6 @@ ul {
   display: flex;
 }
 .navlist .item + .item{
-  background-color: lawngreen;
   margin-left: 50px;
 }
 
@@ -83,12 +82,11 @@ ul {
 .navlist .current-link {
   color: var(--accent-color);
 }
-.contacts{
+.header-nav .contacts{
   display: flex;
   margin-left: auto;
 }
-.contacts .link{
-  background-color: lawngreen;
+.header-nav .contacts .link{
   margin-left: 50px;
 }
 .contacts .link {
@@ -148,8 +146,16 @@ ul {
   background-color: var(--conteiner-background);
   cursor: pointer;
 }
+.btn-portfolio-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+}
 .button {
-  background-color: var(--background-color);
+  margin-right: 8px;
+
+  background-color: var(--background-color-lignt-blue);
   border-radius: 4px;
   border: 4px var(--background-color-lignt-blue);
   color: var(--text-color-dark-grey);
@@ -168,6 +174,9 @@ ul {
   color: var(--white-text);
   cursor: pointer;
 }
+.btn-portfolio-list:last-child{
+  margin-right: 0;
+}
 .current-button {
   background-color: var(--accent-color);
   box-shadow: 0px, 4px, rgba(0, 0, 0, 0.15);
@@ -175,7 +184,7 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   border: 4px var(--background-color-lignt-blue);
-  padding: 15px 32px;
+  padding: 6px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -280,14 +289,36 @@ margin-right: 30px;
 .main-title-hidden {
   visibility: hidden;
 }
+.projects-list{
+display: flex;  
+flex-wrap: wrap;
+margin-top: -30px;
+margin-left: -30px;
+}
+.projects-list > .item{
+  outline: 1px solid #EEEEEE;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--text-color-dark-grey);
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .project-type {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color-light-grey);
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+.fill {
+  object-fit: cover;
 }
