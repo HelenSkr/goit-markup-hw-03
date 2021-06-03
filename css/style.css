@@ -40,10 +40,16 @@ ul {
   margin: 0;
   padding: 0;
 }
+.section-header{
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ECECEC;
+  align-items: center;
+}
 .header-nav{
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
 }
 .logo {
   margin-right: 93px;
