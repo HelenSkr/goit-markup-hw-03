@@ -41,7 +41,6 @@ ul {
   padding: 0;
 }
 .section-header{
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ECECEC;
@@ -93,11 +92,14 @@ ul {
 .header-nav .contacts{
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .header-nav .contacts .link{
   margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav .contacts .item{
+
 }
 .contacts .link {
   display: block;
@@ -120,20 +122,25 @@ ul {
   color: var(--white-text);
 }
 .hero {
-  width: 1600px;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--background-color-dark-blue);
+  text-align: center;
+}
+.main-title{
+  font-family: 'Roboto';
   color: var(--white-text);
   text-transform: uppercase;
-  background-color: var(--background-color-dark-blue);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 3px;
   text-align: center;
 }
+
 /*Стилизация кнопок навигации*/
 
 .button-main {
@@ -143,6 +150,7 @@ ul {
   box-shadow: 0px, 4px, rgba(0, 0, 0, 0.15);
   color: var(--white-text);
   padding: 10px 32px;
+  letter-spacing: 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -161,6 +169,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .button {
   background-color: var(--background-color-lignt-blue);
@@ -187,12 +196,10 @@ ul {
 }
 .btn-portfolio-list .item{
   margin-right: 8px;
-  margin-bottom: 34px;
 }
 .btn-portfolio-list .item:last-child{
   margin-right: 0;
 }
-
 .current-button {
   background-color: var(--accent-color);
   box-shadow: 0px, 4px, rgba(0, 0, 0, 0.15);
@@ -247,7 +254,6 @@ ul {
 }
 .section-our-teem{
   background-color: var(--background-color-lignt-blue);
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
@@ -281,6 +287,7 @@ margin-right: 30px;
   height: 260;
 }
 .card-name-teem{
+  background-color: var(--conteiner-background);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -300,7 +307,6 @@ margin-right: 30px;
 }
 /*селектор тега*/
 .footer {
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -343,23 +349,21 @@ margin-left: -30px;
 .card-description{
   outline: 1px solid #EEEEEE;
   padding-top: 20px;
+  padding-left: 24px;
   padding-bottom: 20px;
+  padding-right: 24px;
 }
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--text-color-dark-grey);
-  margin-right: 24px;
-  margin-left: 24px;
   margin-bottom: 4px;
 }
 .project-type {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color-light-grey);
-  margin-right: 24px;
-  margin-left: 24px;
 }
 .fill {
   object-fit: cover;
@@ -368,6 +372,3 @@ margin-left: -30px;
 img {
   display: block;
   }
-.section-our-teem img{
-
-}
