@@ -94,12 +94,14 @@ ul {
   margin-left: auto;
 }
 .header-nav .contacts .link{
-  margin-left: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-nav .contacts .item{
-
+.contacts-header .item-contacts{
+  margin-right: 50px;
+}
+.contacts-header .item-contacts:last-child{
+  margin-right: 0px;
 }
 .contacts .link {
   display: block;
@@ -135,6 +137,7 @@ ul {
   color: var(--white-text);
   text-transform: uppercase;
   font-weight: 900;
+  font-style: normal;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 3px;
